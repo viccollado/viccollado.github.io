@@ -99,8 +99,11 @@ section .main-body{
 }
 
 #avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
+    height: max(130px, min(200px, calc(100vw/6)));
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;      /* Makes the image circular */
+    object-fit: cover;       /* Ensures the image covers the area */
+    aspect-ratio: 1 / 1;     /* Keeps the image square */
 }
 
 @media screen and (max-width: 991px) {
