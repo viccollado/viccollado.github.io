@@ -111,3 +111,43 @@ section .main-body{
         margin: 0;
     }
 }
+
+.project-card-col {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+}
+
+.card {
+    border-radius: 1rem;
+    border: none;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px rgba(57, 72, 210, 0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+    background: #fff;
+}
+.card:hover {
+    box-shadow: 0 4px 24px rgba(57, 72, 210, 0.16), 0 3px 12px rgba(0,0,0,0.08);
+    transform: translateY(-4px) scale(1.02);
+}
+.card-title {
+    color: #3948d2;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.card-text {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+.btn-primary {
+    background: #3948d2;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background: #222e8a;
+}
