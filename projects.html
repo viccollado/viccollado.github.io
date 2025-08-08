@@ -17,6 +17,16 @@
     <!-- For Compatability -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+
     <!-- Markdown -->
     <script type="text/javascript" src="static/js/marked.min.js"></script>
 
@@ -58,6 +68,8 @@
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
 </head>
+
+
 <body>
     <!-- Navigation (copy from index.html) -->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
@@ -81,65 +93,69 @@
         </div>
     </nav>
 
-    <!-- Projects Section -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
-        <div class="container px-5" style="margin-top: 100px;">
+    <!-- Top Section -->
+    <section class="top-section" style="background-image: url('static/assets/img/F1020018.JPG');">
+        <div class="top-section-content">
+            <div class="container px-5">
             <header>
-                <h2 id="projects-subtitle"><i class="bi bi bi-terminal-fill"></i>&nbsp;PROJECTS</h2>
+                <h1 class="text-white display-3 lh-1 font-alt">Projects</h1>
             </header>
-            <div class="main-body">
-                
+                <!-- <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2> -->
             </div>
         </div>
+    </section>
+    <!-- Top Section -->
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 py-4 px-3">
-            <div class="col project-card-col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title mb-2"><i class="bi bi-controller me-2"></i>Queen's Game</h5>
-                        <p class="card-text flex-grow-1">
-                            A brief description of the Queen's Game project goes here. Explain what it does or why it's interesting.
-                        </p>
-                        <a href="projects/queens_game.html" class="btn btn-primary mt-auto">View Project</a>
+    <!-- Projects Section -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="projects">
+        <div class="container px-5">
+            <div class="row row-cols-1 row-cols-md-2 g-3 py-4 px-3">
+                <div class="col project-card-col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><i class="bi bi-controller me-2"></i>Queen's Game</h5>
+                            <p class="card-text flex-grow-1">
+                                A brief description of the Queen's Game project goes here. Explain what it does or why it's interesting.
+                            </p>
+                            <a href="projects/queens_game.html" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col project-card-col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
+                            <p class="card-text flex-grow-1">
+                                Short description of another project.
+                            </p>
+                            <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+                <div class="col project-card-col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
+                            <p class="card-text flex-grow-1">
+                                Short description of another project.
+                            </p>
+                            <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col project-card-col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
+                            <p class="card-text flex-grow-1">
+                                Short description of another project.
+                            </p>
+                            <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col project-card-col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
-                        <p class="card-text flex-grow-1">
-                            Short description of another project.
-                        </p>
-                        <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more cards as needed -->
-            <div class="col project-card-col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
-                        <p class="card-text flex-grow-1">
-                            Short description of another project.
-                        </p>
-                        <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col project-card-col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title mb-2"><i class="bi bi-bar-chart-fill me-2"></i>Another Project</h5>
-                        <p class="card-text flex-grow-1">
-                            Short description of another project.
-                        </p>
-                        <a href="projects/another_project.html" class="btn btn-primary mt-auto">View Project</a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </section>
 
