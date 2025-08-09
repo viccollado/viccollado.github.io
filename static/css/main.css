@@ -123,6 +123,7 @@ section .main-body{
     border-radius: 50%;      /* Makes the image circular */
     object-fit: cover;       /* Ensures the image covers the area */
     aspect-ratio: 1 / 1;     /* Keeps the image square */
+    border: 2px solid #3948d2; /* Add border for light mode */
 }
 
 @media screen and (max-width: 991px) {
@@ -173,4 +174,188 @@ section .main-body{
 }
 .btn-primary:hover {
     background: #222e8a;
+}
+
+/* Navbar link color customization */
+.navbar-nav .nav-link {
+    color: #3948d2 !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #222e8a !important;
+}
+
+/* Remove highlight and underline for HOME and PROJECTS links */
+.navbar-nav .nav-link[href="#page-top"],
+.navbar-nav .nav-link[href="projects.html"] {
+    color: #3948d2 !important;
+    /* No border, background, or underline */
+}
+.navbar-nav .nav-link[href="#page-top"]:hover,
+.navbar-nav .nav-link[href="projects.html"]:hover {
+    color: #222e8a !important;
+    /* No border, background, or underline */
+}
+
+/* Dark mode navbar links */
+body.dark-mode .navbar-nav .nav-link {
+    color: #a5c8ff !important;
+}
+body.dark-mode .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-nav .nav-link.active {
+    color: #fff !important;
+    /* No underline */
+}
+body.dark-mode .navbar-nav .nav-link[href="#page-top"],
+body.dark-mode .navbar-nav .nav-link[href="projects.html"] {
+    color: #a5c8ff !important;
+    /* No border, background, or underline */
+}
+body.dark-mode .navbar-nav .nav-link[href="#page-top"]:hover,
+body.dark-mode .navbar-nav .nav-link[href="projects.html"]:hover {
+    color: #fff !important;
+    /* No border, background, or underline */
+}
+
+/* Dark mode toggle button styling */
+#darkModeToggle {
+    background: none !important;
+    border: none !important;
+    color: #3948d2 !important;
+    box-shadow: none !important;
+    transition: color 0.2s;
+    padding: 0.375rem 0.75rem;
+}
+#darkModeToggle .bi {
+    color: #3948d2 !important;
+    font-size: 1.3rem;
+}
+#darkModeToggle:hover .bi {
+    color: #222e8a !important;
+}
+body.dark-mode #darkModeToggle {
+    color: #a5c8ff !important;
+}
+body.dark-mode #darkModeToggle .bi {
+    color: #a5c8ff !important;
+}
+body.dark-mode #darkModeToggle:hover .bi {
+    color: #fff !important;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+body.dark-mode .bg-gradient-primary-to-secondary-light,
+body.dark-mode .bg-gradient-primary-to-secondary-gray {
+    background: linear-gradient(45deg, #23272b, #181a1b) !important;
+}
+
+body.dark-mode .card {
+    background: #23272b;
+    color: #f1f1f1;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .card-title {
+    color: #a5c8ff;
+}
+
+body.dark-mode .btn-primary {
+    background: #3948d2;
+    color: #fff;
+}
+
+body.dark-mode .bg-bottom,
+body.dark-mode footer {
+    background-color: #23272b !important;
+    color: #bfcfff !important;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .header {
+    background-color: #23272b !important;
+    border-bottom: 1px solid #3948d2;
+}
+
+body.dark-mode .main-body {
+    color: #f1f1f1;
+}
+
+body.dark-mode section header h2 {
+    color: #a5c8ff;
+}
+
+body.dark-mode a,
+body.dark-mode .main-body a {
+    color: #7bb1ff;
+}
+
+body.dark-mode a:hover,
+body.dark-mode .main-body a:hover {
+    color: #d6e4ff;
+}
+
+body.dark-mode .bi,
+body.dark-mode .bi-file-text-fill,
+body.dark-mode .bi-award-fill {
+    color: #a5c8ff !important;
+}
+
+body.dark-mode #avatar img {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+    border: 2px solid #3948d2;
+}
+
+.white-icon{
+color:white !important;
+}
+
+.dark-icon{
+color:black !important;
+}
+
+/* Card colors for light mode (ensure consistency) */
+.bg-gradient-primary-to-secondary-gray .card,
+.bg-gradient-primary-to-secondary-light .card {
+    background: #fff;
+    color: #444;
+}
+.bg-gradient-primary-to-secondary-gray .card-title,
+.bg-gradient-primary-to-secondary-light .card-title {
+    color: #3948d2;
+}
+.bg-gradient-primary-to-secondary-gray .card-text,
+.bg-gradient-primary-to-secondary-light .card-text {
+    color: #444;
+}
+
+/* Card colors for dark mode (match index) */
+body.dark-mode .bg-gradient-primary-to-secondary-gray .card,
+body.dark-mode .bg-gradient-primary-to-secondary-light .card {
+    background: #23272b;
+    color: #f1f1f1;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+body.dark-mode .bg-gradient-primary-to-secondary-gray .card-title,
+body.dark-mode .bg-gradient-primary-to-secondary-light .card-title {
+    color: #a5c8ff;
+}
+body.dark-mode .bg-gradient-primary-to-secondary-gray .card-text,
+body.dark-mode .bg-gradient-primary-to-secondary-light .card-text {
+    color: #e0e0e0;
+}
+
+.brand-colored {
+    color: #3948d2 !important;
+}
+
+body.dark-mode .brand-colored {
+    color: #a5c8ff !important;
 }

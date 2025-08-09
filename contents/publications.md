@@ -14,3 +14,6 @@
 
 - X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593) -->
 
+#### Working Papers
+
+- <strong>V. Collado</strong>, R. Mínguez, F.J. Méndez: Upper-tail sampling correction technique for engineering design. [[Paper]](https://hdl.handle.net/10016/46849)
