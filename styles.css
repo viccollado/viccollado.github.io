@@ -7,8 +7,16 @@
     overflow-x: hidden;
 }
 
+:root {
+    --font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --blue-main-color: #2937f0;
+    --blue-hover-color: #1a218a;
+    --bg-main-color: #f1f1f1;
+    --head-font-width: 600;
+}
+
 body {
-    background-color:beige;
+    background-color: var(--bg-main-color);
 }
 
 .navbar__container {
@@ -16,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background: #9b9b9b; 
+    background: var(--bg-main-color); 
     z-index: 1000;
     width: 100%;
     margin: 0 auto;
@@ -25,10 +33,17 @@ body {
 }
 
 #navbar-logo {
-    color: #0ce48d;
+    color: var(--blue-main-color);
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+}
+
+#navbar-logo:hover {
+    color: var(--blue-hover-color);
+    transition: all 0.3s ease;
 }
 
 .navbar__menu {
@@ -43,7 +58,8 @@ body {
 }
 
 .navbar__links {
-    color: #fff;
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--blue-main-color);
     text-decoration: none;
     height: 100%;
     padding: 0 1rem;
@@ -52,7 +68,7 @@ body {
 }
 
 .navbar__links:hover {
-    color: #0ce48d;
+    color: var(--blue-hover-color);
     transition: all 0.3s ease;
 }
 
@@ -74,4 +90,23 @@ body {
         cursor: pointer;
         padding: 0;
     }
+}
+
+
+.top-section {
+    position: relative;
+    padding: 10rem 0;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+}
+
+.top-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
