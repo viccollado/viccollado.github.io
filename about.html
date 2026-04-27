@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About | Víctor Collado Fernández</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+		rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<nav class="navbar" role="navigation" aria-label="Main Navigation">
+			<div class="navbar__container">
+				<a href="index.html" id="navbar-logo">Víctor Collado Fernández</a>
+				<ul class="navbar__menu" id="navbar-menu">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__links">HOME</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__links navbar__links--active">ABOUT</a>
+					</li>
+					<li class="navbar__item">
+						<a href="publications.html" class="navbar__links">PUBLICATIONS</a>
+					</li>
+				</ul>
+
+				<button
+					class="navbar__toggle"
+					id="mobile-menu"
+					aria-label="Toggle Navigation"
+					aria-expanded="false"
+					aria-controls="navbar-menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page">
+		<section class="page__header">
+			<p class="page__eyebrow">About</p>
+			<h1>Academic Profile</h1>
+			<p class="page__lead">
+				This page can summarize your academic background, current affiliation, main lines of research and current collaborations.
+			</p>
+		</section>
+
+		<section class="info-grid" aria-label="Academic profile details">
+			<article class="info-card">
+				<h2>Biography</h2>
+				<p>
+					Add here a concise professional biography with your education timeline, key milestones and current role.
+				</p>
+			</article>
+
+			<article class="info-card">
+				<h2>Research Interests</h2>
+				<ul>
+					<li>Hydrology and climate risk assessment.</li>
+					<li>Extreme events and uncertainty quantification.</li>
+					<li>Environmental modeling and open science workflows.</li>
+				</ul>
+			</article>
+
+			<article class="info-card">
+				<h2>Teaching</h2>
+				<p>
+					You can include courses taught, supervision work and training activities for undergraduate, graduate or professional audiences.
+				</p>
+			</article>
+
+			<article class="info-card">
+				<h2>Contact and Links</h2>
+				<p>
+					Add institutional email, ORCID, Google Scholar profile and any professional links relevant to your academic activity.
+				</p>
+			</article>
+		</section>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>

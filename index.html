@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Víctor Collado Fernández</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="Main Navigation">
             <div class="navbar__container">
-                <a href="/" id="navbar-logo">Víctor Collado Fernández</a>
-                <ul class="navbar__menu">
+                <a href="index.html" id="navbar-logo">Víctor Collado Fernández</a>
+                <ul class="navbar__menu" id="navbar-menu">
                     <li class="navbar__item">
-                        <a href="/" class="navbar__links">HOME</a>
+                        <a href="index.html" class="navbar__links navbar__links--active">HOME</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/about.html" class="navbar__links">ABOUT</a>
+                        <a href="about.html" class="navbar__links">ABOUT</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/publications.html" class="navbar__links">PUBLICATIONS</a>
+                        <a href="publications.html" class="navbar__links">PUBLICATIONS</a>
                     </li>
                 </ul>
                 
@@ -37,20 +31,50 @@
                     class="navbar__toggle"
                     id="mobile-menu"
                     aria-label="Toggle Navigation"
-                    aria-expanded=""
-                    false
+                    aria-expanded="false"
+                    aria-controls="navbar-menu"
                 >
-                    <i class="fas fa-bars"></i>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-
-
             </div>
         </nav>
     </header>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('resources/images/F1020018.JPG');">
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero__background" style="background-image: url('resources/images/F1020018.JPG');"></div>
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <p class="hero__eyebrow">Academic website</p>
+                <h1>Víctor Collado Fernández</h1>
+                <p class="hero__lead">
+                    Research, publications and academic profile in a clear, elegant and professional space.
+                </p>
+
+                <div class="hero__actions">
+                    <a class="button button--primary" href="publications.html">View publications</a>
+                    <a class="button button--secondary" href="about.html">About me</a>
+                </div>
+            </div>
+
+            <aside class="hero__profile" aria-label="Personal profile image and summary">
+                <div class="hero__portrait">
+                    <img src="resources/images/F1020013.JPG" alt="Portrait of Víctor Collado Fernández">
+                </div>
+                <div class="hero__card">
+                    <p class="hero__card-title">Profile</p>
+                    <p>
+                        Replace this text later with a short academic bio, research interests or current position.
+                    </p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 
 
 </body>

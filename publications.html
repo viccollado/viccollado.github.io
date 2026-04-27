@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publications | Víctor Collado Fernández</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+		rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<nav class="navbar" role="navigation" aria-label="Main Navigation">
+			<div class="navbar__container">
+				<a href="index.html" id="navbar-logo">Víctor Collado Fernández</a>
+				<ul class="navbar__menu" id="navbar-menu">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__links">HOME</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__links">ABOUT</a>
+					</li>
+					<li class="navbar__item">
+						<a href="publications.html" class="navbar__links navbar__links--active">PUBLICATIONS</a>
+					</li>
+				</ul>
+
+				<button
+					class="navbar__toggle"
+					id="mobile-menu"
+					aria-label="Toggle Navigation"
+					aria-expanded="false"
+					aria-controls="navbar-menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page">
+		<section class="page__header">
+			<p class="page__eyebrow">Publications</p>
+			<h1>Peer-Reviewed Work</h1>
+			<p class="page__lead">
+				Curated selection of published work, current working papers and ongoing research projects.
+			</p>
+		</section>
+
+		<section class="pub-section" aria-label="Journal publications">
+			<h2>Publications</h2>
+			<div class="pub-list">
+				<article class="publication-card">
+					<figure class="publication-cover" aria-label="Journal cover placeholder">
+						<span>Add journal cover in resources/images and replace this placeholder.</span>
+					</figure>
+
+					<div class="publication-content">
+						<h3>Stochastic methods and hydrological frequency analysis</h3>
+						<p class="publication-meta">
+							Stochastic Environmental Research and Risk Assessment (2026)
+						</p>
+						<p class="publication-keywords">
+							<span>Keywords:</span> Hydrological frequency analysis, stochastic methods, climate risk, uncertainty quantification.
+						</p>
+
+						<div class="publication-actions">
+							<button class="button button--dark" type="button" data-modal-target="paper-abstract-modal">
+								Ver abstract
+							</button>
+							<a class="button button--muted" href="https://link.springer.com/article/10.1007/s00477-026-03215-0" target="_blank" rel="noopener noreferrer">
+								Revista
+							</a>
+							<a class="button button--muted" href="#" aria-disabled="true">
+								GitHub (pendiente)
+							</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="pub-section" aria-label="Working papers">
+			<h2>Working Papers</h2>
+			<div class="collection-grid">
+				<article class="collection-card">
+					<h3>Paper in preparation</h3>
+					<p>
+						Add title, co-authors, status and a short 2-3 line summary of your ongoing manuscript.
+					</p>
+				</article>
+				<article class="collection-card">
+					<h3>Submitted manuscript</h3>
+					<p>
+						Include submission date, target journal and key contribution once available.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="pub-section" aria-label="Projects">
+			<h2>Projects</h2>
+			<div class="collection-grid">
+				<article class="collection-card">
+					<h3>Project title</h3>
+					<p>
+						Describe aims, funding source and current progress with links to outputs if available.
+					</p>
+				</article>
+				<article class="collection-card">
+					<h3>Open-source tools</h3>
+					<p>
+						Add software projects, data pipelines or reproducible workflows associated with your research.
+					</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<div class="modal" id="paper-abstract-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="abstract-title">
+		<div class="modal__backdrop" data-close-modal></div>
+		<div class="modal__dialog">
+			<h3 id="abstract-title">Abstract</h3>
+			<p>
+				Placeholder abstract text. Replace this block with the official abstract from your publication page.
+			</p>
+			<button class="button button--dark modal__close" type="button" data-close-modal>
+				Cerrar
+			</button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
