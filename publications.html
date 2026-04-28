@@ -41,7 +41,7 @@
 		</nav>
 	</header>
 
-	<main class="page">
+	<main class="page publications-page">
 		<section class="page__header">
 			<p class="page__eyebrow">Publications</p>
 			<h1>Peer-Reviewed Work</h1>
@@ -54,28 +54,28 @@
 			<h2>Publications</h2>
 			<div class="pub-list">
 				<article class="publication-card">
-					<figure class="publication-cover" aria-label="Journal cover placeholder">
-						<span>Add journal cover in resources/images and replace this placeholder.</span>
+					<figure class="publication-cover" aria-label="Journal cover for SERRA article">
+						<img src="resources/journal/SERRA.webp" alt="SERRA journal cover">
 					</figure>
 
 					<div class="publication-content">
-						<h3>Stochastic methods and hydrological frequency analysis</h3>
+						<h3>Upper-tail correction of multivariate synthetic environmental series using annual maxima</h3>
 						<p class="publication-meta">
 							Stochastic Environmental Research and Risk Assessment (2026)
 						</p>
 						<p class="publication-keywords">
-							<span>Keywords:</span> Hydrological frequency analysis, stochastic methods, climate risk, uncertainty quantification.
+							<span>Keywords:</span> Extreme value theory (EVT), Generalized extreme values (GEV), Annual maxima, Upper-tail correction, Quantile anchoring, Rank-preserving interpolation, Synthetic environmental risk simulations.
 						</p>
 
 						<div class="publication-actions">
-							<button class="button button--dark" type="button" data-modal-target="paper-abstract-modal">
-								Ver abstract
+							<button class="button button--dark" type="button" data-modal-target="paper-abstract-1">
+								Abstract
 							</button>
 							<a class="button button--muted" href="https://link.springer.com/article/10.1007/s00477-026-03215-0" target="_blank" rel="noopener noreferrer">
 								Revista
 							</a>
-							<a class="button button--muted" href="#" aria-disabled="true">
-								GitHub (pendiente)
+							<a class="button button--muted" href="https://github.com/viccollado/ExtremeCorrection" target="_blank" rel="noopener noreferrer">
+								GitHub
 							</a>
 						</div>
 					</div>
@@ -85,47 +85,92 @@
 
 		<section class="pub-section" aria-label="Working papers">
 			<h2>Working Papers</h2>
-			<div class="collection-grid">
-				<article class="collection-card">
-					<h3>Paper in preparation</h3>
-					<p>
-						Add title, co-authors, status and a short 2-3 line summary of your ongoing manuscript.
-					</p>
-				</article>
-				<article class="collection-card">
-					<h3>Submitted manuscript</h3>
-					<p>
-						Include submission date, target journal and key contribution once available.
-					</p>
+			<div class="pub-list">
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>Working paper title</h3>
+						<p class="publication-meta">Working paper</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Replace this default card with the next working paper, including co-authors, status and a short summary of the main contribution.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--muted" href="#" aria-disabled="true">Draft</a>
+						</div>
+					</div>
 				</article>
 			</div>
 		</section>
 
 		<section class="pub-section" aria-label="Projects">
 			<h2>Projects</h2>
-			<div class="collection-grid">
-				<article class="collection-card">
-					<h3>Project title</h3>
-					<p>
-						Describe aims, funding source and current progress with links to outputs if available.
-					</p>
+			<div class="pub-list">
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>MyEst</h3>
+						<p class="publication-meta">Research project</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Project focused on estimation and optimization methods. I contributed to the optimization side of the project.
+						</p>
+						<!-- <div class="publication-actions">
+							<a class="button button--dark" href="https://geoocean.unican.es/myest/" target="_blank" rel="noopener noreferrer">Web</a>
+							<a class="button button--muted" href="https://geoocean.unican.es/hyweb/projects#MyEst" target="_blank" rel="noopener noreferrer">Project page</a>
+						</div> -->
+					</div>
 				</article>
-				<article class="collection-card">
-					<h3>Open-source tools</h3>
-					<p>
-						Add software projects, data pipelines or reproducible workflows associated with your research.
-					</p>
+
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>TwinPeacs</h3>
+						<p class="publication-meta">AI research project</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Project within the AI research funding line, focused on applied research and methodological development.
+						</p>
+						<!-- <div class="publication-actions">
+							<a class="button button--muted" href="https://www.aei.gob.es/convocatorias/buscador-convocatorias/proyectos-investigacion-ambito-inteligencia-artificial-2025" target="_blank" rel="noopener noreferrer">Call</a>
+						</div> -->
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="pub-section" aria-label="Open-source tools">
+			<h2>Open-source tools</h2>
+			<div class="pub-list">
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath</h3>
+						<p class="publication-meta">Open-source tool</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Contribution to the BlueMath repository for distributions notebooks focused on Extreme Value Theory.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath_tk</h3>
+						<p class="publication-meta">Open-source tool</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Contribution to the BlueMath_tk repository, extending the toolkit for statistical tools.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath_tk" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
 				</article>
 			</div>
 		</section>
 	</main>
 
-	<div class="modal" id="paper-abstract-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="abstract-title">
+	<div class="modal" id="paper-abstract-1" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="abstract-title-1">
 		<div class="modal__backdrop" data-close-modal></div>
 		<div class="modal__dialog">
-			<h3 id="abstract-title">Abstract</h3>
+			<h3 id="abstract-title-1">Abstract</h3>
 			<p>
-				Placeholder abstract text. Replace this block with the official abstract from your publication page.
+				Reliable risk assessment of environmental systems often relies on long, multivariate synthetic time series produced by sampling, stochastic simulators and/or fast emulators. In practice, such simulations may reproduce bulk behavior and dependence reasonably well, yet misrepresent marginal upper tails, biasing estimates of rare, high-impact events. This short communication presents an annual maxima (AM)-centric, marginal post-processing method that (i) tests whether a correction is needed by comparing simulated AM to a target AM distribution based on historical records; and (ii) if needed, anchors simulated AM to target quantiles and propagates that adjustment to the full time series via a monotone interpolation that preserves ranks. Because the procedure preserves the empirical copula, rank-based dependence and copula-based tail dependence are retained, while marginal tails are aligned with the target. The method is intended as a lightweight safeguard against marginal tail misrepresentation in synthetic risk simulations, avoiding unnecessary complexity or retraining of the underlying generator. An application to climate-based wave simulations for Santoña (Spain) illustrates the approach and provides diagnostics for tail fit, bulk preservation, and dependence stability, showing that the method corrects return levels while minimally altering the time series.
 			</p>
 			<button class="button button--dark modal__close" type="button" data-close-modal>
 				Cerrar
