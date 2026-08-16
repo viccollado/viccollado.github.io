@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="viccollado">
+	<link rel="icon" type="image/x-icon" href="resources/images/icono.ico">
+	<title>Code & Tools | Víctor Collado Fernández</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+		rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<nav class="navbar" role="navigation" aria-label="Main Navigation">
+			<div class="navbar__container">
+				<a href="index.html" id="navbar-logo">Víctor Collado Fernández</a>
+				<ul class="navbar__menu" id="navbar-menu">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__links">HOME</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__links">ABOUT</a>
+					</li>
+					<li class="navbar__item">
+						<a href="research.html" class="navbar__links">Research</a>
+					</li>
+					<li class="navbar__item">
+                        <a href="talks.html" class="navbar__links">TALKS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tools.html" class="navbar__links navbar__links--active">Code & Tools</a>
+                    </li>
+				</ul>
+
+				<button
+					class="navbar__toggle"
+					id="mobile-menu"
+					aria-label="Toggle Navigation"
+					aria-expanded="false"
+					aria-controls="navbar-menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page publications-page">
+		<section class="page__header">
+			<p class="page__eyebrow">Code & Tools</p>
+			<h1>Open-Source Tools</h1>
+			<p class="page__lead">
+				Open-source contributions, research software, and side projects.
+			</p>
+		</section>
+
+		
+		<!-- Open-source contributions -->
+		<section class="pub-section" aria-label="Open-source contributions">
+			<h2>Open-source contributions</h2>
+			<div class="pub-list">
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath</h3>
+						<p class="publication-meta">Open-source Python repository by GeoOcean</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Development of statistical distribution notebooks for the BlueMath repository, with a focus on Extreme Value Theory.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+				
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath toolkit</h3>
+						<p class="publication-meta">Open-source Python package by GeoOcean</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Development of statistical functionality for BlueMath Toolkit, extending its capabilities for statistical analysis.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath_tk" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>		
+		
+		<!-- Research Software -->
+		<!-- <section class="pub-section" aria-label="Research software">
+			<h2>Research software</h2>
+			<div class="pub-list">
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath</h3>
+						<p class="publication-meta">Open-source Python repository by GeoOcean</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Development of statistical distribution notebooks for the BlueMath repository, with a focus on Extreme Value Theory.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>BlueMath toolkit</h3>
+						<p class="publication-meta">Open-source Python package by GeoOcean</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Development of statistical functionality for BlueMath Toolkit, extending its capabilities for statistical analysis.
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/GeoOcean/BlueMath_tk" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section> -->
+
+		<!-- Side projects -->
+		<section class="pub-section" aria-label="Side projects">
+			<h2>Side projects</h2>
+			<div class="pub-list">
+
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>Tango Game Bot</h3>
+						<p class="publication-meta">Python bot</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Bot that solves the Linkedin Tango Game using advanced optimization techniques. The game solution is computed using Mixed-Integer Linear Programming (MILP).
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/viccollado/TangoGame" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="publication-card publication-card--text">
+					<div class="publication-content">
+						<h3>Queens Game Bot</h3>
+						<p class="publication-meta">Python bot</p>
+						<p class="publication-keywords">
+							<span>Description:</span> Bot that solves the Linkedin Queens Game using advanced optimization techniques. The game solution is computed using Mixed-Integer Linear Programming (MILP).
+						</p>
+						<div class="publication-actions">
+							<a class="button button--dark" href="https://github.com/viccollado/QueensGame" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>		
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
