@@ -1,2 +1,5 @@
-.jpg
-.HEIC
+*.jpg
+*.HEIC
+*.py
+__pycache__/*
+.conda/*
