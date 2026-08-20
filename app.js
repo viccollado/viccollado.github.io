@@ -47,3 +47,4 @@ if (modalTriggers.length > 0) {
 		}
 	});
 }
+
