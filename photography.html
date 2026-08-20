@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="viccollado">
+	<link rel="icon" type="image/x-icon" href="resources/images/icono.ico">
+	<title>Photography | Víctor Collado Fernández</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+		rel="stylesheet" />
+</head>
+<body>
+	<header>
+		<nav class="navbar" role="navigation" aria-label="Main Navigation">
+			<div class="navbar__container">
+				<a href="index.html" id="navbar-logo">Víctor Collado Fernández</a>
+				<ul class="navbar__menu" id="navbar-menu">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__links">HOME</a>
+					</li>
+					<li class="navbar__item">
+						<a href="about.html" class="navbar__links">ABOUT</a>
+					</li>
+					<li class="navbar__item">
+						<a href="research.html" class="navbar__links">Research</a>
+					</li>
+					<li class="navbar__item">
+                        <a href="talks.html" class="navbar__links">TALKS</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tools.html" class="navbar__links">Code & Tools</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="photography.html" class="navbar__links navbar__links--active">Photography</a>
+                    </li>
+				</ul>
+
+				<button
+					class="navbar__toggle"
+					id="mobile-menu"
+					aria-label="Toggle Navigation"
+					aria-expanded="false"
+					aria-controls="navbar-menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page photography-page">
+		<section class="page__header photography-intro">
+			<p class="page__eyebrow">Photography</p>
+			<h1>Frames from the road</h1>
+			<p class="page__lead">
+				A small collection of places, textures and quiet moments observed along the way with my analogic camera.
+			</p>
+		</section>
+
+		<section class="photo-feature" aria-label="Featured photographs">
+			<div class="photo-feature__slides" id="photo-feature-slides"></div>
+			<div class="photo-feature__controls">
+				<button class="photo-control" type="button" id="photo-previous" aria-label="Previous photograph">&larr;</button>
+				<div class="photo-feature__status" id="photo-status" aria-live="polite"></div>
+				<button class="photo-control" type="button" id="photo-next" aria-label="Next photograph">&rarr;</button>
+			</div>
+		</section>
+
+		<section class="photo-gallery-section" aria-labelledby="photo-gallery-title">
+			<div class="photo-section-heading">
+				<div>
+					<h2 id="photo-gallery-title">Archive</h2>
+				</div>
+				<p>A selection of scanned negatives, organized by roll.</p>
+				<!-- <p>Una selección de negativos escaneados, organizada por rollos.</p> -->
+			</div>
+			<div class="photo-gallery" id="photo-gallery"></div>
+		</section>
+	</main>
+
+	<div class="photo-modal" id="photo-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title">
+		<div class="photo-modal__backdrop" data-photo-close></div>
+		<div class="photo-modal__dialog">
+			<figure>
+				<img id="photo-modal-image" src="" alt="">
+				<div class="photo-modal__details">
+					<button class="button button--dark modal__close" type="button" data-photo-close>
+						Close
+					</button>
+					<figcaption id="photo-modal-title">1.</figcaption>
+				</div>
+			</figure>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+	<script src="photography.js"></script>
+</body>
+</html>
