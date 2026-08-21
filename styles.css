@@ -619,8 +619,8 @@ body {
 
 .photo-feature__slides {
     position: relative;
-    height: min(68vh, 680px);
-    min-height: 380px;
+    height: min(90vh, 920px);
+    min-height: 600px;
     overflow: hidden;
     /* border: 1px solid var(--border-color); */
     background: var(--dark-color);
@@ -1096,8 +1096,8 @@ body:has(.modal.is-open) {
     }
 
     .photo-feature__slides {
-        height: 58vh;
-        min-height: 300px;
+        height: 70vh;
+        min-height: 380px;
     }
 
     .photo-section-heading {
