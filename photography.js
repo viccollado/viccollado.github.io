@@ -3,9 +3,9 @@ const photoPage = document.querySelector(".photography-page");
 if (photoPage) {
 	const photoCollections = [
 		// Roll 1
-		{ filename: "01_01.webp", caption: "Benidorm." },
+		{ filename: "01_01.webp", caption: "Benidorm, Spain." },
 		{ filename: "01_02.webp", caption: "Cerro del Tío Pío, Madrid." },
-		{ filename: "01_03.webp", caption: "Iglesia, Madrid." },
+		{ filename: "01_03.webp", caption: "Church, Madrid." },
 		{ filename: "01_04.webp", caption: "Mallorca, Spain." },
 		{ filename: "01_05.webp", caption: "Mallorca, Spain." },
 		{ filename: "01_06.webp", caption: "Mallorca, Spain." },
@@ -16,7 +16,7 @@ if (photoPage) {
 		{ filename: "02_01.webp", caption: "Parking, Milan, Italy." },
 		{ filename: "02_02.webp", caption: "Flower shop, Milan, Italy." },
 		{ filename: "02_03.webp", caption: "Tram, Milan, Italy" },
-		{ filename: "02_04.webp", caption: "Train Station, Villasanta, Italy." },
+		{ filename: "02_04.webp", caption: "Villasanta Train Station, Italy." },
 		{ filename: "02_05.webp", caption: "Gas station, Spain." },
 		{ filename: "02_06.webp", caption: "Milan, Italy." },
 		{ filename: "02_07.webp", caption: "Gran Vía, Madrid, Spain." },
