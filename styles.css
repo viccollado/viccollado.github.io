@@ -318,7 +318,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.page__header-content { max-width: 100%; display: flex; flex-direction: column; gap: 1.5rem; } .page__header-intro { flex-shrink: 0; } .info-card--biography { flex: 1; display: flex; flex-direction: column; }
+.page__header-content { max-width: 100%; display: flex; flex-direction: column; gap: 1.5rem; }
 
 .page__eyebrow {
     font-size: 0.78rem;
@@ -436,11 +436,6 @@ body {
     font-size: 1.3rem;
     width: 1.5rem;
     text-align: center;
-}
-
-.contact-icon {
-    font-size: 1.2rem;
-    display: inline-block;
 }
 
 .contact-card {
@@ -580,31 +575,6 @@ body {
     pointer-events: none;
 }
 
-.collection-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.collection-card {
-    grid-column: span 6;
-    padding: 1.15rem;
-    border-radius: 1.15rem;
-    border: 1px solid var(--border-color);
-    background: rgba(244, 240, 232, 0.72);
-}
-
-.collection-card h3 {
-    font-family: var(--font-heading);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.collection-card p {
-    color: var(--muted-color);
-    line-height: 1.75;
-}
-
 .page.photography-page {
     padding-right: var(--container-gutter-left);
 }
@@ -704,13 +674,6 @@ body {
     font-size: 0.78rem;
     font-weight: 800;
     letter-spacing: 0.16em;
-}
-
-.photo-note {
-    margin-top: 2.3rem;
-    color: var(--accent-hover);
-    font-family: var(--font-heading);
-    font-size: 1.15rem;
 }
 
 .photo-gallery-section {
@@ -1018,16 +981,12 @@ body:has(.modal.is-open) {
         padding-left: var(--container-gutter);
     }
 
-    .page__header--with-contact { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; } .contact-card { position: relative; top: auto; } .info-card--biography { flex: none; }
+    .page__header--with-contact { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; }
 
     .contact-card {
         position: relative;
         top: auto;
         width: 100%
-    }
-
-    .collection-card {
-        grid-column: span 12;
     }
 
     .publication-card {
