@@ -17,7 +17,7 @@ if (photoPage) {
 		{ filename: "02_02.webp", caption: "Flower shop, Milan, Italy." },
 		{ filename: "02_03.webp", caption: "Tram, Milan, Italy" },
 		{ filename: "02_04.webp", caption: "Villasanta Train Station, Italy." },
-		{ filename: "02_05.webp", caption: "Gas station, Spain." },
+		{ filename: "02_05.webp", caption: "Bergamo, Italy." },
 		{ filename: "02_06.webp", caption: "Milan, Italy." },
 		{ filename: "02_07.webp", caption: "Gran Vía, Madrid, Spain." },
 		// Roll 3
