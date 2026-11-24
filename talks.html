@@ -132,36 +132,33 @@
 		</section>
 
 		<!-- Seminars -->
-		<!-- <section class="pub-section" aria-label="Seminars">
+		<section class="pub-section" aria-label="Seminars">
 			<h2>Seminars</h2>
 			<div class="pub-list">
 				<article class="publication-card publication-card--text">
 					<div class="publication-content">
-						<h3>4th International Workshop on Waves, Storm Surges, and Coastal Hazards</h3>
+						<h3>Research Topics Seminar in Statistics & Data Science.</h3>
 						<p class="publication-meta">
-							<strong>Title:</strong> Climate Variability of Extremes of Wave Height Using a Time-Dependent GEV Model
+							<strong>Title:</strong> Stochastic Optimization with Tail-Risk Control: Reliable Design and Adaptive Coastal Pathways
 						</p>
 						<p class="publication-meta">
-							<strong>Authors:</strong> Víctor Collado, Roberto Mínguez, Fernando J. Méndez, Javier Tausia, Laura Cagigal, Jared Ortiz-Angulo
+							<strong>Authors:</strong> Víctor Collado
 						</p>
 						<p class="publication-meta">
-							<strong>Date:</strong> 25/09/2025
+							<strong>Date:</strong> 23/11/2026
 						</p>
 						<p class="publication-meta">
-							<strong>Place:</strong> Santander, Spain
+							<strong>Place:</strong> Madrid-Puerta de Toledo Campus (UC3M), Spain
 						</p>
 						<div class="publication-actions">
-							<a class="button button--muted" href="https://www.waveworkshop.org/" target="_blank" rel="noopener noreferrer">
-								Web
-							</a>
-							<a class="button button--muted" href="https://www.waveworkshop.org/conferences/2025/Presentations/M14-PresentacionPoster_VictorCollado.pdf" target="_blank" rel="noopener noreferrer">
-								Presentation
-							</a>
+							<button class="button button--dark" type="button" data-modal-target="abstract-seminarMasterStatistics">
+								Abstract
+							</button>
 						</div>
 					</div>
 				</article>
 			</div>
-		</section> -->
+		</section>
 	</main>
 
 	<!-- ABSTRACTS -->
@@ -174,6 +171,19 @@
 			</p>
 			<p>
 				The proposed approach is illustrated using long synthetic wave time series generated for the Santoña coastal area in northern Spain, where reliable estimation of extreme wave conditions is essential for coastal risk assessment and engineering design. Historical observations from nearby wave buoy are used to estimate the target annual maxima distribution, against which the simulated maxima are evaluated. When discrepancies in the upper tail are detected, the proposed adjustment aligns simulated maxima with the target quantiles while preserving the internal temporal ordering of the simulations. Diagnostics based on quantile-quantile comparisons, return level plots, and dependence measures confirm that the correction improves the representation of extreme wave heights without significantly modifying the bulk properties or dependence structure of the original simulations. These results highlight the usefulness of the method as a practical post-processing step in climate-driven coastal risk analyses where accurate tail behaviour is critical.
+			</p>
+			<button class="button button--dark modal__close" type="button" data-close-modal>
+				Close
+			</button>
+		</div>
+	</div>
+	
+	<div class="modal" id="abstract-seminarMasterStatistics" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="abstract-title-1">
+		<div class="modal__backdrop" data-close-modal></div>
+		<div class="modal__dialog">
+			<h3 id="abstract-title-1">Abstract</h3>
+			<p>
+				Engineering and environmental decisions must often be made before key uncertainties are resolved. Stochastic optimization provides a framework to make such decisions in a principled way, but a fundamental question remains: should we only care about how likely a failure is, or also about how severe it might be? This talk introduces the Conditional Value-at-Risk (CVaR) as a tool to control the tail of the risk distribution, so that the worst outcomes are taken into account explicitly in the decision-making process. We will explore two applications. The first addresses reliability-based design, where we show how CVaR can be calibrated to meet a target reliability level while limiting the severity of the failures that remain. The second focuses on coastal adaptation to climate change, where decisions on seawalls, nature-based solutions such as coral reefs and mangroves, and vulnerability-reducing measures must be scheduled over time as sea-level rise unfolds.
 			</p>
 			<button class="button button--dark modal__close" type="button" data-close-modal>
 				Close
